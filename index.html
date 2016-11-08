@@ -9,17 +9,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>The Land In Between Pages</title>
+    <title>Azzy's Corner</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/business-casual.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,39 +31,35 @@
 
 </head>
 
-<body>
-
-    <div class="brand">The Land In Between Pages</div>
-    <div class="address-bar">between pages 1 and 150</div>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
                 </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Home</a>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Home</span> 
+                </a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.html">Home</a>
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a href="blog.html">Blog</a>
+                        <a class="page-scroll" href="#download">Poems</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -71,113 +68,150 @@
         <!-- /.container -->
     </nav>
 
-    <div class="container">
-
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12 text-center">
-                    <div id="carousel-example-generic" class="carousel slide">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators hidden-xs">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img class="img-responsive img-full" src="book1.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="book2.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="book3.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="book4.jpg" alt="">
-                            </div>
-                        </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                            <span class="icon-prev"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                            <span class="icon-next"></span>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row" style="background-image: url('read.jpg')>
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Azzy's Corner</h1>
+                        <p class="intro-text">Where you catch a glimpse of my random thoughts</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
-                    <h2 class="brand-before">
-                        <small>Welcome to</small>
-                    </h2>
-                    <h1 class="brand-name">The Land In Between Pages</h1>
-                    <hr class="tagline-divider">
-                    <h2>
-                        <small>By
-                            <strong>The Geek</strong>
-                        </small>
-                    </h2>
                 </div>
             </div>
         </div>
+    </header>
 
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
         <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center"><a href="https://buzz.iloveindia.com/top-20-bestselling-authors-of-all-time.html" target="_blank">
-                        <strong>Top Bestselling Authors Of All Times</strong></a>
-                    </h2>
-                    <hr>
-                    
-                    
-                    <hr class="visible-xs">
-                    <p>The universe of literature has two corresponding elements - the writers and the readers. The writers carve their imagination in black and whute while readers dissolve into that creativity, weaving their own world. Be it poetry or prose, fiction or non-fiction, drama or novel, writers as well as readers have their preffered genre. However, some writers dabble in more than one genre and there are literary connoisseurs whose readership encompasses all kinds of literature. The interpretation of every literary piece varies with time and person; despite this difference some writers leave an impact on the minds of readers across several generations. Their writings manage to have a universal appeal and every reader reserves an exclusive place for them in their book-shelves. These literary gems mesmerizevreaders and become best-sellers, recording huge sales in the market. Authors such as Shakespeare and Tolsoy have enriched us since time immemorial while others like JK Rowling have recenntly joined the league.</p>
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Azzy's Corner</h2>
+                <p>My thoughts and opinions bouncing inside my mind, comes out in the form of codes which you can view using a site. Read and read but don't ever call me weird.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Poems</h2>
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h2>Inside</h2>
+                                <p>Covered in your shell</p>
+                                <p>Veiled by your smile</p>
+                                <p>Sheltered inside</p>
+                                <p>The one who's colored black</p>
+                                <p>Red and white</p>
+                                <p>Love and purity</p>
+                                <p>Yellow and purple</p>
+                                <p>Happiness and loyalty</p>
+                                <p>All of which</p>
+                                <p>Covered it well</p>
+                                <p>Veiled and sheltered </p>
+                                <p>The glowing color inside</p>
+                                <p>It glowed then faded</p>
+                                <p>Faded then glowed</p>
+                                <p>But still was sheltered</p>
+                                <p>The one who's colored black</p>
+                                <p>You hid it well</p>
+                                <p>And surfaced once</p>
+                                <p>Were you happy?</p>
+                                <p>Were you sad?</p>
+                            </div>
+                            <div class="col-sm-6" style="text-align: center;">
+                                <h2>Being You</h2>
+                                <p>As we keep our silence</p>
+                                <p>We're being judged</p>
+                                <p>As we find our voice</p>
+                                <p>We're being compared</p>
+                                <p>As we learn to love</p>
+                                <p>We're being hated</p>
+                                <p>As we start to hate</p>
+                                <p>We're being loved</p>
+                                <p>As complicated as it may be</p>
+                                <p>As unpredictable it may seem</p>
+                                <p>We're not to choose</p>
+                                <p>'Cause this is our world</p>
+                                <p>It's a world of no perfection</p>
+                                <p>It's a world of stares and gossips</p>
+                                <p>It's a world of similariries and differences</p>
+                                <p>It's a world of love and hatred</p>
+                                <p>But however, however</p>
+                                <p>You and I should remember</p>
+                                <p>Everyone is unique</p>
+                                <p>Everyone is special</p>
+                                <p>You are who you are</p>
+                                <p>I am who I am</p>
+                                <p>We're two different individuala</p>
+                                <p>And we'll never ever be the same</p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
         <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center"><a href="https://jamesclear.com/best-books/best-selling" target="_blank">
-                        <strong>Top Bestselling Books</strong></a>
-                    </h2>
-                    <hr>
-                    <p>Best selling books are ranked by number of copies sold.</p>
-                </div>
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Us</h2>
+                <p>Feel free to email us to provide some feedback on our works, give us suggestions, or to just say hello!</p>
+                
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </section>
 
-    </div>
-    <!-- /.container -->
+    <!-- Map Section -->
+    <div id="map"></div>
 
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; The Land In Between Pages 2016</p>
-                </div>
-            </div>
+        <div class="container text-center">
+            <p>Copyright &copy; Azzy's Corner 2016</p>
         </div>
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="vendor/jquery/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
 
 </body>
 
 </html>
+
